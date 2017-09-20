@@ -20,7 +20,7 @@ public class pizzaHut {
 				{
 					displayPizzaSize(size);
 					displayPizzatype();
-					
+					displayPizzaPrice(size)
 				}
 				if ("medium".equalsIgnoreCase(size));
 				{
@@ -31,18 +31,12 @@ public class pizzaHut {
 					
 				}
 				
-				
-				
-				
-				
-				
-				
-	public static void displayPizzaSize(size)
+	private static void displaySize(int size)
 	{
 					System.out.println("You said " + size + " pizza size.");
 	}
 	
-	public static void displayPizzaType(PizzaKind)
+	private static void displayPizzaType(PizzaKind)
 				{
 					System.out.println("What kind of pizza do You want? "
 							+ "\n Pepperoni, Sausage, cheese");
@@ -58,10 +52,19 @@ public class pizzaHut {
 	{double mediumCost = 9.99, largeCost = 12.99, smallCost = 6.99;
 	
 	if("small".equalsIgnoreCase(size));
-		System.out.println(smallCost);
-		
+		{
+			System.out.println(smallCost);
+		}
+	if ("medium".equalsIgnoreCase(size));
+	{
+		System.out.println(mediumCost);
+	}
+	if ("large".equalsIgnoreCase(size));
+	{
+		System.out.println(largeCost);
 	}
 	
 	}
-	}
+		}
+		}	
 }
