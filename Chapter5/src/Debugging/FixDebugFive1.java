@@ -26,7 +26,7 @@ public class FixDebugFive1
       { 
     	  bill = bill + HIGH_PRICE;
       }
-      else (usersChoice == 3 | usersChoice == 4);
+      if (usersChoice == 3 | usersChoice == 4);
          {
     	  bill = bill + MED_PRICE;
          }

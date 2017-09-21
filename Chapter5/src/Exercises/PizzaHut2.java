@@ -22,15 +22,19 @@ public class PizzaHut2 {
 				{
 					displayPizzasize();
 					displayPizzaKind();
-					displayPizzaPrice(size);
+					displayPizzaprice(size);
 				}
 				if ("medium".equalsIgnoreCase(size));
 				{
-					
+					displayPizzasize();
+					displayPizzaKind();
+					displayPizzaprice(size);
 				}
 				if ("large".equalsIgnoreCase(size));
 				{
-					
+				displayPizzasize();
+				displayPizzaKind();
+				displayPizzaprice(size);
 				}
 				}
 	
@@ -38,35 +42,35 @@ public class PizzaHut2 {
 
 		private static void displayPizzasize()
 		{
-			String size;
+			String size = null;
 			System.out.println("You said " + size + " pizza size.");
 		}
 		
 		private static void displayPizzaKind()
 		{
+			Scanner input = new Scanner (System.in);
 			String kind, size;
 			
 			System.out.println("What kind of pizza do You want? "
 					+ "\n Pepperoni, Sausage, or cheese");
 			kind = input.nextLine();
-			if ("Pepperoni".equalsIgnoreCase(kind) || "Sausage".equalsIgnoreCase(kind)||"Chesse".equalsIgnoreCase(kind));
+			if ("Pepperoni".equalsIgnoreCase(kind) || "Sausage".equalsIgnoreCase(kind)||"Chesse".equalsIgnoreCase(kind))
 			{
-				
 			}
 			
-			public static void displayPizzaPrice(size)
+			public static void displayPizzaprice(size)
 			{
 				double mediumCost = 9.99, largeCost = 12.99, smallCost = 6.99;
 				
-				if("small".equalsIgnoreCase(size));
+				if("small".equalsIgnoreCase(size))
 				{
 					System.out.println(smallCost);
 				}
-			if ("medium".equalsIgnoreCase(size));
+				else if ("medium".equalsIgnoreCase(size))
 			{
 				System.out.println(mediumCost);
 			}
-			if ("large".equalsIgnoreCase(size));
+				else if ("large".equalsIgnoreCase(size))
 			{
 				System.out.println(largeCost);
 			}
